@@ -56,7 +56,7 @@ const ReportCard = () => {
             type="submit"
             className="w-full bg-gradient-to-r from-sky-400 to-sky-500 text-white py-4 px-6 rounded-2xl hover:from-sky-500 hover:to-sky-600 transition-all transform hover:scale-105 shadow-lg font-bold text-lg"
           >
-            리포트 보러가기 🚀
+            리포트 보기 🚀
           </button>
         </form>
       </div>
