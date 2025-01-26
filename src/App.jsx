@@ -12,7 +12,7 @@ const ReportCard = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('/reportData.json');
+        const response = await fetch('/ClassReport/reportData.json');
         const data = await response.json();
         setReportData(data);
         if (selectedName && data.students[selectedName]) {
