@@ -419,42 +419,44 @@ const ReportCard = () => {
         </div>
 
         <div className="bg-gradient-to-r from-sky-100 to-blue-100 p-4 rounded-xl shadow-lg">
-          <div className="flex items-center mb-3">
-            <MessageCircle className="text-sky-500 w-5 h-5 mr-2" />
-            <h2 className="text-sky-700 text-lg font-bold">선생님의 응원 메시지</h2>
-          </div>
-          <p className="text-sky-700 text-sm leading-relaxed bg-white/70 p-4 rounded-xl">
-            {studentData.teacherComment}
-          </p>
-        </div>
+ <div className="flex items-center mb-3">
+   <MessageCircle className="text-sky-500 w-5 h-5 mr-2" />
+   <h2 className="text-sky-700 text-lg font-bold">선생님의 응원 메시지</h2>
+ </div>
+ <p className="text-sky-700 text-sm leading-relaxed bg-white/70 p-4 rounded-xl">
+   {studentData.teacherComment}
+ </p>
+</div>
 
-        <div className="text-center py-4 space-y-4">
-          <button
-            onClick={() => {
-              html2canvas(document.getElementById('root')).then(function(canvas) {
-                const link = document.createElement('a');
-                link.download = '생글방글_학생리포트.png';
-                link.href = canvas.toDataURL();
-                link.click();
-              });
-            }}
-            className="bg-gradient-to-r from-sky-400 to-sky-500 text-white py-3 px-6 rounded-xl hover:from-sky-500 hover:to-sky-600 transition-all active:scale-95 shadow-lg font-bold inline-flex items-center text-base mb-4"
-          >
-            결과 공유하기 📱
-          </button>
-          <button
-            onClick={() => {
-              setShowReport(false);
-              setInputName('');
-              setSelectedName('');
-            }}
-            className="bg-gradient-to-r from-sky-400 to-sky-500 text-white py-3 px-6 rounded-xl hover:from-sky-500 hover:to-sky-600 transition-all active:scale-95 shadow-lg font-bold inline-flex items-center text-base"
-          >
-            처음으로 돌아가기 👋
-          </button>
-        </div>
-      </div>
-    </div>
+<div className="text-center py-4">
+ <div className="grid grid-cols-2 gap-4">
+   <button
+     onClick={() => {
+       setShowReport(false);
+       setInputName('');
+       setSelectedName('');
+     }}
+     className="bg-gradient-to-r from-sky-400 to-sky-500 text-white py-3 px-4 rounded-xl hover:from-sky-500 hover:to-sky-600 transition-all active:scale-95 shadow-lg font-bold text-sm"
+   >
+     뒤로가기 👈
+   </button>
+   <button
+     onClick={() => {
+       html2canvas(document.getElementById('root')).then(function(canvas) {
+         const link = document.createElement('a');
+         link.download = '생글방글_학생리포트.png';
+         link.href = canvas.toDataURL();
+         link.click();
+       });
+     }}
+     className="bg-gradient-to-r from-sky-400 to-sky-500 text-white py-3 px-4 rounded-xl hover:from-sky-500 hover:to-sky-600 transition-all active:scale-95 shadow-lg font-bold text-sm"
+   >
+     저장하기 💾
+   </button>
+ </div>
+ </div>
+ </div>
+ </div>
   );
 };
 
