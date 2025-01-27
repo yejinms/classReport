@@ -205,46 +205,32 @@ const ReportCard = () => {
 </div>
 
 <div className="text-center py-4">
- <div className="grid grid-cols-2 gap-4">
-   <button
+ <button
+   onClick={() => {
+     setShowReport(false);
+     setInputName('');
+     setSelectedName('');
+   }}
+   className="bg-gradient-to-r from-sky-400 to-sky-500 text-white py-3 px-8 rounded-xl hover:from-sky-500 hover:to-sky-600 transition-all active:scale-95 shadow-lg font-bold text-sm mx-auto"
+ >
+   뒤로가기 👈
+ </button>
+   {/* <button
      onClick={() => {
-       setShowReport(false);
-       setInputName('');
-       setSelectedName('');
-     }}
-     className="bg-gradient-to-r from-sky-400 to-sky-500 text-white py-3 px-4 rounded-xl hover:from-sky-500 hover:to-sky-600 transition-all active:scale-95 shadow-lg font-bold text-sm"
-   >
-     뒤로가기 👈
-   </button>
-   <button
-     onClick={() => {
-      //  html2canvas(document.getElementById('root')).then(function(canvas) {
-      //    const link = document.createElement('a');
-      //    link.download = '생글방글_학생리포트.png';
-      //    link.href = canvas.toDataURL();
-      //    link.click();
-      //  });
-      html2canvas(document.getElementById('root'), {
-        scale: 2, // 해상도를 높임
-        useCORS: true, // 크로스 도메인 이미지 처리
-        logging: true, // 디버깅을 위한 로깅
-        letterRendering: true, // 텍스트 렌더링 개선
-        allowTaint: true // 크로스 도메인 이미지 허용
-      }).then(function(canvas) {
-        const link = document.createElement('a');
-        link.download = '생글방글_학생리포트.png';
-        link.href = canvas.toDataURL('image/png', 1.0);
-        link.click();
-      });
-     }}
+       html2canvas(document.getElementById('root')).then(function(canvas) {
+         const link = document.createElement('a');
+         link.download = '생글방글_학생리포트.png';
+         link.href = canvas.toDataURL();
+         link.click();
+       });
      className="bg-gradient-to-r from-sky-400 to-sky-500 text-white py-3 px-4 rounded-xl hover:from-sky-500 hover:to-sky-600 transition-all active:scale-95 shadow-lg font-bold text-sm"
    >
      저장하기 💾
-   </button>
+   </button> */}
  </div>
  </div>
  </div>
- </div>
+//  </div>
   );
 };
 
