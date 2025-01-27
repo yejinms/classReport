@@ -211,7 +211,7 @@ const ReportCard = () => {
      setInputName('');
      setSelectedName('');
    }}
-   className="bg-gradient-to-r from-sky-400 to-sky-500 text-white py-3 px-8 rounded-xl hover:from-sky-500 hover:to-sky-600 transition-all active:scale-95 shadow-lg font-bold text-sm mx-auto"
+   className="w-full bg-gradient-to-r from-sky-400 to-sky-500 text-white py-4 px-6 rounded-2xl hover:from-sky-500 hover:to-sky-600 transition-all transform hover:scale-105 shadow-lg font-bold text-lg"
  >
    뒤로가기 👈
  </button>
