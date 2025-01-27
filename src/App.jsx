@@ -49,7 +49,7 @@ const ReportCard = () => {
             type="text"
             value={inputName}
             onChange={(e) => setInputName(e.target.value)}
-            placeholder="학생 이름을 정확히 입력해주세요"
+            placeholder="학생 이름을 정확히 입력해주세요 (예: 김생글)"
             className="w-full p-4 border-2 border-sky-200 rounded-2xl focus:outline-none focus:ring-2 focus:ring-sky-400 text-lg text-center bg-white shadow-inner"
           />
           <button
