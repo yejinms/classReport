@@ -9,4 +9,9 @@ export default defineConfig({
       reportUnusedDisableDirectives: true
     }
   }
+  // ,
+  // server: {
+  //   allowedHosts: ['clclh8-5173.csb.app']
+  // }
+  // preview 보기 코드
 });
