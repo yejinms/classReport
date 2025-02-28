@@ -183,7 +183,7 @@ const ReportCard = () => {
             <h2 className="text-sky-700 text-lg font-bold">다음 달의 도전</h2>
           </div>
           <p className="text-sky-600 text-sm mb-4 opacity-75">
-            2월 수업에서는 이런 점을 보완할 예정이에요.
+            새학기에는 이런 점을 보완해봅시다.
           </p>
           <div className="bg-gradient-to-r from-sky-50 to-blue-50 rounded-xl p-3 space-y-2">
             {studentData.nextGoals.map((goal, index) => (
